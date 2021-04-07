@@ -1,0 +1,478 @@
+/* Animações */
+
+@keyframes animacao_btn_banner {
+    from {
+        top: 0;
+    }
+    to {
+        top: -8px;
+    }
+}
+
+@keyframes animacao_btn_i {
+    from {
+        top: 0;
+    }
+    to {
+        top: -12px;
+    }
+}
+
+
+/* Gerais */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    /* background: linear-gradient(145deg, #F562F8 1%, #4E1A96 15%, #2C0C77 60%, #5BB1D2 80%);
+    background: url(../img/background.png);
+    background-size: cover; */
+    background: linear-gradient( 145deg, rgb(19, 5, 78), rgb(69, 16, 138), rgb(91, 177, 210));
+    background-attachment: fixed;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body.alterar_fonte {
+    font-family: "Poppins", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    color: #c211a0;
+}
+
+.section_caixa1 {
+    background: rgba(240, 240, 240);
+    text-align: center;
+    padding: 50px 40px;
+}
+
+.section_caixa2 {
+    background: rgba(230, 225, 247);
+    text-align: center;
+    padding: 50px 40px;
+}
+
+.titulo_section p {
+    color: #46108a;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+.titulo_section h3 {
+    text-align: center;
+    font-size: 2.8rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #c211a0;
+}
+
+.titulo_section span {
+    font-weight: 300;
+    color: #c211a0;
+}
+
+strong {
+    color: #46108a;
+    text-transform: uppercase;
+}
+
+
+/* Barra de navegação */
+
+#nav_menu {
+    padding: 20px 0;
+}
+
+.navbar-toggler {
+    border-color: #fff;
+}
+
+nav i,
+.navbar-toggler,
+#menu a {
+    color: #fff;
+}
+
+.logo {
+    width: 120px;
+}
+
+#menu a {
+    font-weight: 500;
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
+    display: inline-block;
+}
+
+#menu a:hover {
+    color: #c211a0;
+    border-bottom: 1px solid #c211a0;
+    transition: all 0.4s;
+}
+
+
+/* Banner */
+
+#titulo_banner h1 {
+    font-size: 3.7rem;
+    font-weight: 600;
+    line-height: 4.8rem;
+}
+
+#titulo_banner span {
+    color: #fff;
+}
+
+#titulo_banner p {
+    color: #d4cedd;
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+}
+
+#banner {
+    padding: 70px 0 70px;
+}
+
+#titulo_banner {
+    margin-bottom: 100px;
+}
+
+#banner_principal img {
+    width: 90%;
+}
+
+button.btn-primary {
+    border-radius: 60px;
+    padding: 10px 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+button.btn-primary:hover {
+    background: #fff;
+    color: #c211a0;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+    animation: animacao_btn_banner 0.6s infinite alternate;
+    -moz-animation: animacao_btn_banner 0.6s infinite alternate;
+    -webkit-animation: animacao_btn_banner 0.6s infinite alternate;
+    -ms-animation: animacao_btn_banner 0.6s infinite alternate;
+}
+
+
+/* Section Entenda */
+
+#caixa_icons_tecnologias {
+    padding-top: 40px;
+}
+
+#caixa_icons_tecnologias i {
+    position: relative;
+}
+
+#caixa_icons_tecnologias i:hover {
+    animation: animacao_btn_i 0.6s forwards;
+    -moz-animation: animacao_btn_i 0.6s forwards;
+    -webkit-animation: animacao_btn_i 0.6s forwards;
+    -ms-animation: animacao_btn_i 0.6s forwards;
+}
+
+#caixa_icons_tecnologias h4 {
+    font-weight: 500;
+    padding-top: 10px;
+    color: #46108a;
+    margin: 10px 0 20px;
+}
+
+#caixa_icons_tecnologias p {
+    font-size: 1rem;
+}
+
+#linha_caixa_tecnologias {
+    position: relative;
+    top: 110px;
+    border-bottom: 2px solid #46108a;
+    letter-spacing: 80vw;
+}
+
+.fa-html5 {
+    color: #ec6231;
+}
+
+.fa-css3-alt {
+    color: #2061af;
+}
+
+.fa-js-square {
+    color: #f7e018;
+}
+
+.fa-bootstrap {
+    color: #6c41a3;
+}
+
+
+/* Section Para que? */
+
+.caixa_motivo {
+    padding: 15px 0;
+}
+
+.caixa_motivo h5 {
+    color: #46108a;
+    font-weight: 500;
+}
+
+.caixa_motivo img {
+    width: 400px;
+}
+
+
+/* Section Portfolio */
+
+#portfolio {
+    background: url(../img/fundo_icons.svg);
+    background-size: contain;
+    background-blend-mode: lighten;
+    background-attachment: fixed;
+}
+
+#portfolio .titulo_section p {
+    color: #fff;
+}
+
+#img_sites {
+    margin: 30px auto 0;
+}
+
+#img_sites .margem {
+    margin-bottom: 15px;
+}
+
+#img_sites .caixa_img_site {
+    box-shadow: 1px 1px 25px rgb(0, 0, 0);
+    border: 5px solid #fff;
+    display: inline-block;
+}
+
+#img_sites .caixa_img_site:hover {
+    box-shadow: 1px 1px 25px rgb(255, 255, 255);
+}
+
+#img_sites h5 {
+    color: #fff;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 2px;
+    text-transform: uppercase;
+}
+
+#img_sites p {
+    color: #fff;
+    font-weight: 300;
+    margin-top: 0;
+}
+
+
+/* Section Orçamento */
+
+#caixa_orcamento {
+    box-shadow: 1px 1px 20px rgba(27, 27, 27, 0.3);
+    margin: 25px auto;
+    padding-bottom: 40px;
+    width: 450px;
+    height: auto;
+    background: #fff;
+}
+
+#topo_caixa_orcamento {
+    background: rgb(63, 194, 80);
+    padding: 12px 0 5px;
+}
+
+#topo_caixa_orcamento h5 {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#descricao_orcamento {
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+#descricao_orcamento i {
+    color: rgb(63, 194, 80);
+    margin-right: 5px;
+}
+
+#descricao_orcamento ul {
+    text-align: left;
+    list-style-type: none;
+}
+
+#descricao_orcamento ul li {
+    margin-bottom: 20px;
+}
+
+#caixa_btn_orcamento a button.btn-success {
+    border-radius: 60px;
+    padding: 8px 40px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    position: relative;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+#caixa_btn_orcamento a button.btn-success:hover {
+    animation: animacao_btn_banner 0.6s infinite alternate;
+    -moz-animation: animacao_btn_banner 0.6s infinite alternate;
+    -webkit-animation: animacao_btn_banner 0.6s infinite alternate;
+    -ms-animation: animacao_btn_banner 0.6s infinite alternate;
+}
+
+
+/* Section Contato */
+
+#contato {
+    background: url(../img/rodape.svg) no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    padding: 40px 0;
+}
+
+#info_contatos_geral h4 {
+    color: #fff;
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 15px 0;
+}
+
+#info_contatos_geral #img_contato {
+    width: 70%;
+}
+
+#fale_conosco {
+    color: #fff;
+}
+
+#info_contato p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+#redes_sociais_geral p {
+    color: #fff;
+    margin: 20px 0 0;
+}
+
+#redes_sociais_geral i {
+    color: rgb(63, 194, 80);
+}
+
+#redes_sociais {
+    text-align: right;
+}
+
+#redes_sociais i {
+    margin-left: 10px;
+    font-size: 1.8rem;
+    color: #fff;
+}
+
+#redes_sociais_geral a {
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-shadow: 1px 1px 2px #000;
+}
+
+#redes_sociais_geral a:hover {
+    text-decoration: none;
+    text-shadow: 1px 1px 8px #000;
+}
+
+#direitos span {
+    text-align: center;
+    color: #fff;
+    font-size: .8rem;
+}
+
+@media (max-width: 767.98px) {
+    #titulo_banner h1 {
+        font-size: 3.0rem;
+        font-weight: 600;
+        line-height: 3.8rem;
+    }
+    #info_banner {
+        text-align: center;
+    }
+    #info_banner h1 {
+        text-align: center;
+    }
+    #redes_sociais,
+    #contato_whats {
+        text-align: center;
+    }
+    .titulo_section h3 {
+        font-size: 2.2rem;
+    }
+    section#orcamento.section_caixa2 {
+        padding: 50px 0;
+    }
+    #caixa_orcamento {
+        width: 100%;
+    }
+    #caixa_btn_orcamento {
+        margin: auto;
+        width: 80%;
+    }
+    #caixa_btn_orcamento a button.btn-success {
+        padding: 8px 20px;
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+    #descricao_orcamento ul {
+        padding-left: 0;
+        text-align: center;
+        list-style-type: none;
+    }
+    #descricao_orcamento {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #redes_sociais_geral a {
+        font-size: 2rem;
+    }
+}
+
+
+/* Dispositivos médios (tablets com 768px ou mais) */
+
+@media (max-width: 991.98px) {
+    #info_banner {
+        text-align: center;
+        padding: auto 20px;
+    }
+    #info_banner h1 {
+        text-align: center;
+    }
+}
+
+
+/* Dispositivos large (desktops com 992px ou mais) */
+
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+
+
+/* Dispositivos extra large (desktops grandes com 1200px ou mais) */
+
+@media (min-width: 1200px) {}
